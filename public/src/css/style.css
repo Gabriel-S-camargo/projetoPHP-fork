@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #262626;
+}
+
+header {
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .logo {
+  width: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: #00689f;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: #00689f;
+  color: #fff;
+}
+
+nav .nav-button {
+  padding: 20px;
+  border-radius: 50px;
+  border: 2px #00689f solid;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav #register {
+  background-color: #262626;
+  transition: 0.2s ease-in;
+  color: #00689f;
+}
+
+nav #login {
+  background-color: #00689f;
+  color: #262626;
+  transition: 0.2s ease-in;
+}
+
+nav #login:hover {
+  background-color: #262626;
+  color: #00689f;
+}
+
+nav #register:hover {
+  background-color: #00689f;
+  color: #262626;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  min-width: 70% !important;
+  margin: 0 auto;
+}
+
+footer {
+  color: #9888d3;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,71 @@
+.main {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-img {
+  width: 35%;
+}
+
+.hero-title {
+  width: 65%;
+  font-size: 40px;
+}
+.hero h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  background: #ffffff;
+  background: linear-gradient(to top, #ffffff 0%, #00689f 64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h4 {
+  font-weight: 300;
+  margin: 10px 0px;
+  color: #00689f;
+}
+
+hr {
+  margin: 40px 0px;
+  border: 1px solid #00689f;
+}
+
+.func {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.func-title {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.func-title img {
+  max-height: 300px;
+}
+
+.container-func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%;
+}
+
+.content-box {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+}
