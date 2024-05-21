@@ -17,14 +17,6 @@
   width: 65%;
   font-size: 40px;
 }
-.hero h2 {
-  font-size: 60px;
-  text-transform: uppercase;
-  background: #ffffff;
-  background: linear-gradient(to top, #ffffff 0%, #00689f 64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .hero h4 {
   font-weight: 300;
@@ -32,22 +24,11 @@
   color: #00689f;
 }
 
-hr {
-  margin: 40px 0px;
-  border: 1px solid #00689f;
-}
-
 .func {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 70px;
-}
-
-.func-title h2 {
-  font-size: 50px;
-  font-weight: 400;
-  color: #00689f;
 }
 
 .container-func {
@@ -79,13 +60,15 @@ hr {
   min-width: 45%;
   min-height: 300px;
   padding: 40px;
+  gap: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   justify-content: center;
   align-items: center;
   border: 1px solid #00689f;
   border-radius: 4px;
+  background-color: #f1f1f7;
+  box-shadow: 11px 28px 40px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-box-text h3 {

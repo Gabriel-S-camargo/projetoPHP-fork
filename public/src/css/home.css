@@ -13,15 +13,6 @@
   font-size: 40px;
 }
 
-.hero h2 {
-  font-size: 60px;
-  text-transform: uppercase;
-  background: #ffffff;
-  background: linear-gradient(to top, #ffffff 0%, #00689f 64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .hero h4 {
   font-weight: 300;
   margin: 10px 0px;
@@ -34,43 +25,27 @@
   gap: 5px;
 }
 
-hr {
-  margin: 40px 0px;
-  border: 1px solid #00689f;
-}
-
 .tecnology {
   display: flex;
-}
-
-.tec-title {
-  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   align-items: center;
 }
 
-.tec-title h3 {
-  font-size: 45px;
-  background: #ffffff;
-  background: linear-gradient(to top, #ffffff 0%, #00689f 64%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.tec-text {
+  max-width: 400px;
+  text-align: justify;
 }
 
 .tec-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.tec-box {
-  display: flex;
   gap: 20px;
-  margin: 20px 0px;
+  margin: 100px 0px;
 }
 
 .tec-img {
-  width: 120px;
+  width: 300px;
 }
 
 .dev-container {
@@ -82,12 +57,68 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+  margin: 70px 0px;
+  padding: 30px;
+  background-color: #f1f1f7;
+  background-image: url("../img/kk.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #00689f;
+  border-radius: 5px;
+  box-shadow: 11px 28px 40px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dev-box img {
+.dev-git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 2px solid #00689f;
+  border-radius: 4px;
+}
+
+.dev-git a {
+  line-height: 30px;
+}
+
+.dev-git img {
+  width: 30px;
+}
+
+.dev-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
+  border: 3px solid #00689f;
+  animation: changeBorderColor 10s infinite;
+  opacity: 1;
+}
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: #1d6f9b;
+  }
+  20% {
+    border-color: #2eaccb;
+  }
+  40% {
+    border-color: #be9ef3;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  60% {
+    border-color: #9888d3;
+    opacity: 1;
+  }
+  80% {
+    border-color: #119fc3;
+  }
+  100% {
+    border-color: #00689f;
+  }
 }
