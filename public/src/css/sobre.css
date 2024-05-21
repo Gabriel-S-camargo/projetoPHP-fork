@@ -15,13 +15,16 @@
 
 .hero-title {
   width: 65%;
-  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.hero h4 {
-  font-weight: 300;
-  margin: 10px 0px;
-  color: #00689f;
+.hero-title a {
+  border: 1px solid #00689f;
+  padding: 10px 30px;
+  width: 50%;
+  text-align: center;
 }
 
 .func {
@@ -65,10 +68,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #00689f;
-  border-radius: 4px;
-  background-color: #f1f1f7;
-  box-shadow: 11px 28px 40px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-box-text h3 {

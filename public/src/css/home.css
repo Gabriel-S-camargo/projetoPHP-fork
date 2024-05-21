@@ -60,13 +60,9 @@
   gap: 30px;
   margin: 70px 0px;
   padding: 30px;
-  background-color: #f1f1f7;
   background-image: url("../img/kk.png");
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #00689f;
-  border-radius: 5px;
-  box-shadow: 11px 28px 40px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dev-git {
