@@ -39,33 +39,58 @@ hr {
 
 .func {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-
-.func-title {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 70px;
 }
 
-.func-title img {
-  max-height: 300px;
+.func-title h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #00689f;
 }
 
 .container-func {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 50%;
 }
 
 .content-box {
   max-width: 75%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
   text-align: justify;
+  gap: 20px;
+  margin: 20px 0px;
+}
+
+.content-image {
+  display: flex;
+  justify-content: start;
+  min-width: 50%;
+}
+
+.content-image:nth-child(2) {
+  justify-content: end;
+}
+
+.content-box-text {
+  min-width: 45%;
+  min-height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00689f;
+  border-radius: 4px;
+}
+
+.content-box-text h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
 }

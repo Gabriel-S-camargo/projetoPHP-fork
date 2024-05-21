@@ -12,6 +12,7 @@
   width: 65%;
   font-size: 40px;
 }
+
 .hero h2 {
   font-size: 60px;
   text-transform: uppercase;
@@ -25,6 +26,12 @@
   font-weight: 300;
   margin: 10px 0px;
   color: #00689f;
+}
+
+.main-button {
+  margin-top: 40px;
+  display: flex;
+  gap: 5px;
 }
 
 hr {
@@ -64,4 +71,23 @@ hr {
 
 .tec-img {
   width: 120px;
+}
+
+.dev-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dev-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
 }

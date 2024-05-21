@@ -48,7 +48,8 @@ nav ul li a:hover {
   color: #fff;
 }
 
-nav .nav-button {
+nav .nav-button,
+.nav-button {
   padding: 20px;
   border-radius: 50px;
   border: 2px #00689f solid;
@@ -56,7 +57,8 @@ nav .nav-button {
   cursor: pointer;
 }
 
-nav #register {
+nav #register,
+.nav-button {
   background-color: #262626;
   transition: 0.2s ease-in;
   color: #00689f;
