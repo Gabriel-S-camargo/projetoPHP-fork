@@ -22,24 +22,19 @@
                 <input type="search" placeholder="digite id da Venda" id="buscarVenda" name="buscarVenda">
                 <button type="submit">Buscar</button>
             </form>
-            <a href="<?=ROOT?>/venda">Voltar Pagina</a>
+            <a href="<?= ROOT ?>/venda">Voltar Pagina</a>
         </div>
 
         <br><br>
 
-        <form method="post">
-
-            <br><br>
-
+        <form method="post" action="<?= ROOT ?>/venda_adicionar">
             <label for="formaPagamento">Forma De Pagamento</label><br>
             <input type="text" name="formaPagamento" id="formaPagamento">
             <br><br>
 
             <label for="vendaItens">Selecione os produtos da venda</label>
-            <form method="post" action="<?= ROOT ?>/venda_adicionar">
-                <input type="search" placeholder="digite produto" id="buscarProduto" name="buscarProduto">
-                <button type="submit">Buscar</button>
-            </form>
+            <input type="search" placeholder="digite produto" id="buscarProduto" name="buscarProduto">
+            <button type="submit">Buscar</button>
 
             <br><br>
             <table>
@@ -62,7 +57,7 @@
                                 <td><?php echo $produto->nome; ?></td>
                                 <td><?php echo $produto->preco; ?></td>
                                 <td><?php echo $produto->estoque; ?></td>
-                                <td><input type="number"></td>
+                                <td><input type="number" name="produtos[<?php echo $produto->id; ?>][quantidade]" value="1"></td>
                                 <td><button type="submit">Adicionar</button>
                             </tr>
                     <?php }
@@ -72,7 +67,6 @@
                     ?>
                 </tbody>
             </table>
-
 
             <br><br>
 

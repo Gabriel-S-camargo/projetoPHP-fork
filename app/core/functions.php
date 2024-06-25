@@ -19,18 +19,18 @@ function menu(){
     <header>
         <nav>
         <ul>
-        <li><img class='logo' src='http://localhost/testphp/testMVC-Login/public/assets/img/php3d.png' alt='' /></li>
-            <li><a href='http://localhost/testphp/testMVC-Login/public/'>Home</a></li>
+        <li><img class='logo' src='http://localhost/projetoPHP/public/assets/img/php3d.png' alt='' /></li>
+            <li><a href='http://localhost/projetoPHP/public/'>Home</a></li>
             <li><a href='#'>naosei</a></li>
-            <li><a href='http://localhost/testphp/testMVC-Login/public/sobre'>Sobre</a></li>
+            <li><a href='http://localhost/projetoPHP/public/sobre'>Sobre</a></li>
         </ul>";
     if(empty($_SESSION['LOGIN'])){
         echo "
         <div>
-            <a href='http://localhost/testphp/testMVC-Login/public/login'>
+            <a href='http://localhost/projetoPHP/public/login'>
               <button type='button' class='nav-button' id='login'>Login</button>
             </a>
-            <a href='http://localhost/testphp/testMVC-Login/public/register'>
+            <a href='http://localhost/projetoPHP/public/register'>
               <button type='button' class='nav-button' id='register'>Registrar</button>
             </a>
         ";
@@ -39,7 +39,7 @@ function menu(){
         echo "
         <div class='header-button'>
         <h2>Olá, $nome</h2>
-        <a href='http://localhost/testphp/testMVC-Login/public/logout'>
+        <a href='http://localhost/projetoPHP/public/logout'>
         <button type='button' class='nav-button' id='logout'>Logout</button>
         </a>
         ";
@@ -55,7 +55,7 @@ function contentBox($title, $img, $text){
     echo "
     <div class='content-box'>
     <div class='content-image'>
-    <img src='http://localhost/testphp/testMVC-Login/public/assets/img/$img.png' alt='' />
+    <img src='http://localhost/projetoPHP/public/assets/img/$img.png' alt='' />
     </div>
     <div class='content-box-text blur'>
     <h3>$title</h3>

@@ -1,9 +1,7 @@
-
-
 <?php
 
-class VendasItens{
-
+class VendasItens
+{
     use Model;
 
     protected $table = 'vendasitens';
@@ -16,6 +14,5 @@ class VendasItens{
         'valorItem',
         'valorTotal'
     ];
-
 
 }
