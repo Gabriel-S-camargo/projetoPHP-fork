@@ -1,0 +1,209 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+@media (max-width: 1300px) {
+  body {
+    width: 90%;
+  }
+}
+header {
+  padding: 1rem;
+  margin-bottom: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: #00689f;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: #00689f;
+  color: #fff;
+}
+
+nav .nav-button {
+  padding: 20px;
+  border-radius: 50px;
+  border: 2px #00689f solid;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+nav #register,
+.nav-button {
+  background-color: #fff;
+  transition: 0.2s ease-in;
+  color: #00689f;
+}
+
+nav #login,
+nav #logout {
+  background-color: #00689f;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+
+nav #login:hover,
+nav #logout:hover {
+  background-color: #fff;
+  color: #00689f;
+}
+
+nav #register:hover {
+  background-color: #00689f;
+  color: #fff;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+}
+
+hr {
+  margin: 40px 0px;
+  border: 1px solid #00689f;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero-img {
+  width: 35%;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 65%;
+  font-size: 2.5rem;
+}
+
+.h1-title {
+  font-size: 60px;
+  text-transform: uppercase;
+  background: #ffffff;
+  background: linear-gradient(to top, #ffffff 0%, #00689f 64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h2-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1b89c4be;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blur {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  max-width: 750px;
+}
+
+footer {
+  color: #9888d3;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*Produtos - Style Abaixo*/
+
+table,
+td table {
+  width: 46.875rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.internalNav {
+  td {
+    border: 1px solid black;
+    border-collapse: separate;
+  }
+
+  tr {
+    height: 2rem;
+    text-align: center;
+  }
+
+  .internalNav {
+    max-width: 46.875rem;
+    max-height: 2.5rem;
+    
+  }
+}
+
+td:last-child {
+  max-width: 2rem;
+}
+
+.funcoes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.botao {
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.botaoEditar {
+  background-color: green;
+}
+
+.botaoExcluir {
+  background-color: red;
+}

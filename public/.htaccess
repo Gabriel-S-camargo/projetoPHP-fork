@@ -1,0 +1,15 @@
+# RewriteEngine On
+
+# #acecept loading of actual files and directions
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+
+# #send everything else to the index page
+# RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+
+RewriteEngine On
+RewriteBase /testPHP/testMVC-Login/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
